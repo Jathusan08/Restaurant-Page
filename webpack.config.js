@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      inject: "head",
+      inject: "head", // body or head
     }),
   ],
   output: {
