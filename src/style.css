@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  overflow: auto;
+  height: 100%;
+  overscroll-behavior: none;
+  min-width: 1440px;
+  min-height: 630px;
+}
+
+header {
+  background-color: #010632;
+  height: 110px;
+  width: auto;
+  display: flex;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.Icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  gap: 10px;
+  grid-column: 1/2;
+}
+
+.Icon-img {
+  border: none; /* Remove any border */
+  outline: none; /* Remove any outline */
+}
+
+.restaurant-icon {
+  background-image: url("Image/header/logo-icon/icons8-restaurant-building-85.png");
+  background-size: cover;
+  background-position: center;
+  outline: none;
+  border: none;
+  padding: 40px;
+}
+
+.Icon-container > div {
+  font-size: 2rem;
+  color: #ffff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+nav > button {
+  border: none;
+  cursor: pointer;
+}
+
+header > nav:first-of-type > button {
+  font-size: 1.25rem;
+  background-color: #010632;
+  color: #ffff;
+}
+
+header > nav:first-of-type > button:hover {
+  color: #f01542;
+}
+
+header > nav:nth-of-type(2) > button:nth-child(-n + 2) {
+  width: 30px;
+  height: 30px;
+}
+
+header > nav:nth-of-type(2) > button:first-child {
+  background-image: url("Image/header/search-icon/unclicked.png");
+
+  /* Specify background size */
+  background-size: cover; /* or contain, or specific size values */
+}
+
+header > nav:nth-of-type(2) > button:first-child:hover {
+  background-image: url("Image/header/search-icon/clicked.png");
+
+  /* Specify background size */
+  background-size: cover; /* or contain, or specific size values */
+}
+
+header > nav:nth-of-type(2) > button:nth-of-type(2) {
+  background-image: url("Image/header/shoppingBag-icon/unclicked.png");
+  background-size: cover;
+}
+
+header > nav:nth-of-type(2) > button:nth-of-type(2):hover {
+  background-image: url("Image/header/shoppingBag-icon/clicked.png");
+  background-size: cover;
+}
+
+header > nav:nth-of-type(2) > button:nth-of-type(3) {
+  width: 85px;
+  height: 35px;
+  border: none;
+  font-size: 1.25rem;
+  color: #ffff;
+  background-color: #f01542;
+}
+
+header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
+  background-color: #f34367;
+}
