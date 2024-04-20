@@ -19,9 +19,9 @@ body {
 
 header {
   background-color: #010632;
-  height: 110px;
+  height: 15%;
+  /* height: 25vh; */
   width: auto;
-  display: flex;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -118,4 +118,110 @@ header > nav:nth-of-type(2) > button:nth-of-type(3) {
 
 header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
   background-color: #f34367;
+}
+
+#content {
+  width: 100%;
+  height: 100%;
+  background-color: #010632;
+}
+
+.home {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+  width: 80%;
+  background-color: #010632;
+}
+
+.text-info,
+.food-image {
+  height: 100%;
+  width: 50%;
+}
+
+.text-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan-section {
+  width: auto;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan {
+  font-size: 3rem;
+  font-family: fantasy;
+  color: #ffff;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.healthy {
+  color: #fb4f35;
+}
+
+.living {
+  color: #ee1543;
+}
+
+.greetingMessage-section {
+  width: auto;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greetingMessage-section > .message {
+  width: 75%;
+  font-size: 1.25rem;
+  color: #ffff;
+}
+
+.button-Section {
+  width: auto;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-Section > .orderBtn {
+  width: 100px;
+  height: 50px;
+  color: #ffff;
+  background-color: #f01542;
+  border: none;
+  font-size: 1rem;
+}
+
+.button-Section > .orderBtn:hover {
+  background-color: #f34367;
+}
+
+.food-image {
+  background-color: #010632;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.food-image > img {
+  height: 60%;
+  width: 95%;
 }
