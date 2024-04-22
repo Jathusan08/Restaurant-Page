@@ -134,7 +134,8 @@ header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
   align-items: flex-start;
 }
 
-.home-layout {
+.home-layout,
+.aboutUs-layout {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,13 +144,13 @@ header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
   background-color: #010632;
 }
 
-.text-info,
-.food-image {
+.home-layout > .text-info,
+.home-layout > .food-image {
   height: 100%;
   width: 50%;
 }
 
-.text-info {
+.home-layout > .text-info {
   display: flex;
   flex-direction: column;
 }
@@ -213,15 +214,93 @@ header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
   background-color: #f34367;
 }
 
-.food-image {
+.home-layout > .food-image {
   background-color: #010632;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
-.food-image > img {
+.home-layout > .food-image > img {
   height: 60%;
   width: 95%;
+}
+
+.aboutUs {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs-layout > .food-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aboutUs-layout > .text-info,
+.aboutUs-layout > .food-image {
+  height: 100%;
+  width: 50%;
+}
+
+.aboutUs-layout > .food-image > .circular-image {
+  border-radius: 50%;
+  border: 15px solid #fe5a2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+.aboutUs-layout > .food-image > .circular-image > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 65%;
+}
+
+.aboutUs-layout > .text-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.aboutUs-layout > .text-info > .aboutUsTitle {
+  width: auto;
+  color: #f01542;
+  font-family: cursive;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  font-style: italic;
+  padding-left: 50px;
+}
+
+.pharse {
+  color: #e6f0f9;
+  font-size: 2.5rem;
+  font-style: italic;
+  padding-left: 50px;
+}
+
+.restuarantDetail {
+  color: #ffff;
+  font-size: 1.25rem;
+  padding-left: 50px;
+}
+
+.readMoreBtn {
+  background-color: #f01542;
+  font-size: 1rem;
+  color: #ffff;
+  border: none;
+  width: 125px;
+  height: 50px;
+  margin-left: 50px;
 }

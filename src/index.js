@@ -1,6 +1,7 @@
 import "./style.css"; // Import CSS file
 
 import { createHomeContent } from "./home.js";
+import { createAboutUsContent } from "./aboutUs.js";
 
 const homeBtn = document.querySelector(".home-btn");
 const aboutUsBtn = document.querySelector(".aboutUs-btn");
@@ -23,6 +24,8 @@ homeBtn.addEventListener("click", () => {
 aboutUsBtn.addEventListener("click", () => {
   removeContent();
 });
+
+aboutUsBtn.addEventListener("click", createAboutUsContent);
 
 const getClassName = () => {
   const firstChild = content.children[0];
