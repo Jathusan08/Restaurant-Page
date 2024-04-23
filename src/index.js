@@ -22,10 +22,11 @@ homeBtn.addEventListener("click", () => {
 });
 
 aboutUsBtn.addEventListener("click", () => {
-  removeContent();
+  if (getClassName() != "aboutUs") {
+    removeContent();
+    createAboutUsContent();
+  }
 });
-
-aboutUsBtn.addEventListener("click", createAboutUsContent);
 
 const getClassName = () => {
   const firstChild = content.children[0];
