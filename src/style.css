@@ -135,7 +135,8 @@ header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
 }
 
 .home-layout,
-.aboutUs-layout {
+.aboutUs-layout,
+.menu-layout {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,4 +304,126 @@ header > nav:nth-of-type(2) > button:nth-of-type(3):hover {
   width: 125px;
   height: 50px;
   margin-left: 50px;
+}
+
+/* MENU Content*/
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.menu-layout {
+  background: linear-gradient(rgba(1, 6, 50, 0.85), rgba(1, 6, 50, 0.85)),
+    url("Image/menu/foodBackground.jpeg");
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.menu-layout > .title {
+  color: #f01542;
+  font-family: cursive;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.menu-layout > .MainMenuTitle {
+  color: #e6f0f9;
+  font-size: 2.5rem;
+  font-style: italic;
+}
+
+.menu-layout > .menuContainer {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  justify-items: center;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4,
+.menu5,
+.menu6,
+.menu7,
+.menu8 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.menuContainer img {
+  height: 75px;
+  width: 75px;
+}
+
+.menu1Layout,
+.menu2Layout,
+.menu3Layout,
+.menu4Layout,
+.menu5Layout,
+.menu6Layout,
+.menu7Layout,
+.menu8Layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.menu1Title,
+.menu2Title,
+.menu3Title,
+.menu4Title,
+.menu5Title,
+.menu6Title,
+.menu7Title,
+.menu8Title {
+  color: #ffff;
+  font-style: italic;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu1Style,
+.menu2Style,
+.menu3Style,
+.menu4Style,
+.menu5Style,
+.menu6Style,
+.menu7Style,
+.menu8Style {
+  color: #ffff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu1Price,
+.menu2Price,
+.menu3Price,
+.menu4Price,
+.menu5Price,
+.menu6Price,
+.menu7Price,
+.menu8Price {
+  color: #ffff;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }

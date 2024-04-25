@@ -2,9 +2,11 @@ import "./style.css"; // Import CSS file
 
 import { createHomeContent } from "./home.js";
 import { createAboutUsContent } from "./aboutUs.js";
+import { createMenuContent } from "./menu.js";
 
 const homeBtn = document.querySelector(".home-btn");
 const aboutUsBtn = document.querySelector(".aboutUs-btn");
+const menuBtn = document.querySelector(".menu-btn");
 const content = document.querySelector("#content");
 
 console.log("hello");
@@ -25,6 +27,13 @@ aboutUsBtn.addEventListener("click", () => {
   if (getClassName() != "aboutUs") {
     removeContent();
     createAboutUsContent();
+  }
+});
+
+menuBtn.addEventListener("click", () => {
+  if (getClassName() != "menu") {
+    removeContent();
+    createMenuContent();
   }
 });
 
