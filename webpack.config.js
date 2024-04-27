@@ -9,6 +9,7 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
+    watchFiles: ["src/**/*.html"], // Add your HTML template files here
   },
   plugins: [
     new HtmlWebpackPlugin({
