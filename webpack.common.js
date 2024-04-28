@@ -2,14 +2,8 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: {
-    index: "./src/index.js",
-  },
-  devtool: "inline-source-map",
-  devServer: {
-    static: "./dist",
-    watchFiles: ["src/**/*.html"], // Add your HTML template files here
+    app: "./src/index.js",
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -21,10 +15,6 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-  },
-  optimization: {
-    runtimeChunk: "single", // This is added when we have more than 1 entry point but in our case we  have only ' index: "./src/index.js"'
-    // in future may neeeded more than 1.
   },
   module: {
     rules: [
