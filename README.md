@@ -2,7 +2,9 @@
 
 ## Preview
 
-<img src="image.png" alt="JU Restaurant" width="800" height="500">
+<img src="image.png" alt="JU Restaurant" width="800" height="400">
+<img src="image-1.png" alt="JU Restaurant" width="800" height="400">
+<img src="image-2.png" alt="JU Restaurant" width="800" height="400">
 
 ## Introduction
 
