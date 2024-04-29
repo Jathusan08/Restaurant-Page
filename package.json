@@ -21,6 +21,8 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "mini-css-extract-plugin": "^2.9.0",
     "terser-webpack-plugin": "^5.3.10"
   }
 }
